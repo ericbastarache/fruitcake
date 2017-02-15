@@ -1,0 +1,7 @@
+{
+	"site": {
+		"name": "fruitcake",
+		"port": 5000,
+		"secret": "https://www.youtube.com/watch?v=HCBPmxiVMKk"
+	}
+}
