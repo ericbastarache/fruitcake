@@ -28,7 +28,7 @@ app.use(function* catchErrors(next) {
 app.use(jwt({
 	secret: config.site.secret,
 	algorithm: "RS256"
-}).unless({ path: [/^\/public/, /^\/assets/, "/"] }));
+}).unless({ path: [/^\/dist/, "/"] }));
 
 exports.app = app;
 
@@ -39,7 +39,7 @@ app.proxy = true;
 app.use(bodyParser());
 
 // static file serve
-app.use(serve("./public"));
+app.use(serve("./dist"));
 
 // error handling
 app.use(function* error(next) {
