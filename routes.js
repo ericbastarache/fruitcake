@@ -9,8 +9,6 @@ const render = views("public", { map: { html: "swig" } });
 
 const routes = new Router();
 
-// consumable routes
-
 // All pages route to index.html and react-router routes the pages from there
 routes.get("*", function* all() {
 	this.body = yield render("index");
