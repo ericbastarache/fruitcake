@@ -1,11 +1,10 @@
 language: node_js
-sudo: required
 node_js:
 - 7
 - 6
 before_install:
   - "mv config.example.json config.json"
-  - "sudo npm install -g @angular/cli"
+  - "npm install -g @angular/cli"
 env:
   - CXX=g++-4.8
 addons:
@@ -20,3 +19,5 @@ script:
 cache:
   directories:
   - node_modules
+notifications:
+  email: false
