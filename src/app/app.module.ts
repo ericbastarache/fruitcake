@@ -11,8 +11,6 @@ import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutes } from './routes/approutes';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
