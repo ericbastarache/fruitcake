@@ -8,7 +8,7 @@ export const AppRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '**', component: ErrorComponent },
   { path: '',
-    redirectTo: '/home',
+    redirectTo: 'home',
     pathMatch: 'full'
   }
 ];
