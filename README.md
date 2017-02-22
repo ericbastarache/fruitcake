@@ -1,4 +1,4 @@
-# Fruitcake [travisci badge]
+# Fruitcake [![Build Status](https://travis-ci.org/ericbastarache/fruitcake.svg?branch=master)](https://travis-ci.org/ericbastarache/fruitcake) [![Coverage Status](https://coveralls.io/repos/github/ericbastarache/fruitcake/badge.svg)](https://coveralls.io/github/ericbastarache/fruitcake)
 
 This project was generated with [@angular/cli](https://github.com/angular/angular-cli) version 1.0.0-beta.30.
 
@@ -29,4 +29,3 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
