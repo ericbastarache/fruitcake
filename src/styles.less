@@ -1,0 +1,78 @@
+//Colors
+@white: #F9F9F9;
+@blue: #009BFF;
+@black: #202020;
+@navy: #003A60;
+@green: #006C0B;
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin-bottom: 90px;
+}
+
+//Mixins
+.headerFooter {
+  background: linear-gradient(to bottom right, @blue, @navy);
+}
+
+.socialIcons {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+//Site styles
+nav.navbar-fruitcake {
+  .headerFooter();
+  border-radius: 0;
+
+  a.navbar-brand {
+    color: @white;
+  }
+
+  ul.navbar-nav li a {
+    color: @white;
+
+    &:hover {
+      background-color: transparent;
+      color: darken(@blue, 70%);
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+footer.footer {
+  bottom: 0;
+  position: fixed;
+  .headerFooter();
+  width: 100%;
+  ul.social-icons {
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      padding: 10px;
+
+      a {
+        text-decoration: none;
+        color: @white;
+        i.fa.fa-facebook {
+          .socialIcons();
+          background-color: @black;
+        }
+
+        i.fa.fa-twitter {
+          .socialIcons();
+        }
+      }
+    }
+  }
+}
