@@ -15,7 +15,7 @@ body {
 }
 
 //Mixins
-.headerFooter {
+.headerFooterColor {
   background: linear-gradient(to bottom right, @blue, @navy);
 }
 
@@ -30,7 +30,7 @@ body {
 
 //Site styles
 nav.navbar-fruitcake {
-  .headerFooter();
+  .headerFooterColor();
   border-radius: 0;
 
   a.navbar-brand {
@@ -46,12 +46,16 @@ nav.navbar-fruitcake {
       transition: 0.5s ease-in-out;
     }
   }
+
+  span.icon-bar {
+    background-color: @white;
+  }
 }
 
 footer.footer {
   bottom: 0;
   position: fixed;
-  .headerFooter();
+  .headerFooterColor();
   width: 100%;
   ul.social-icons {
     list-style: none;
