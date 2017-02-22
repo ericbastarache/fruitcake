@@ -4,11 +4,11 @@ import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 
 export const AppRoutes: Routes = [
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'home', component: HomeComponent },
-  { path: '**', component: ErrorComponent },
   { path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  }
+  },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '**', component: ErrorComponent }
 ];
