@@ -4,6 +4,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutes } from './routes';
 
 describe('AppComponent', () => {
   beforeEach(() => {
@@ -13,6 +14,7 @@ describe('AppComponent', () => {
         HeaderComponent,
         FooterComponent
       ],
+      imports: [AppRoutes],
     });
     TestBed.compileComponents();
   });
