@@ -1,6 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +6,5 @@ import { FooterComponent } from './footer/footer.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild(HeaderComponent) header: HeaderComponent;
-  @ViewChild(FooterComponent) footer: FooterComponent;
+
 }
