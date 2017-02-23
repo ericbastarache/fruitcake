@@ -4,7 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 
-const APP_ROUTES: Routes = [
+export const APP_ROUTES: Routes = [
   { path: '',
     redirectTo: 'home',
     pathMatch: 'full'
