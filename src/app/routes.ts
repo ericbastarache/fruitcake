@@ -4,7 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 
-export const AppRoutes: Routes = [
+const APP_ROUTES: Routes = [
   { path: '',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -13,3 +13,5 @@ export const AppRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '**', component: ErrorComponent }
 ];
+
+export const AppRoutes = RouterModule.forRoot(APP_ROUTES);

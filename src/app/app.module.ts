@@ -27,7 +27,7 @@ import { AppRoutes } from './routes';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(AppRoutes)
+    AppRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]
