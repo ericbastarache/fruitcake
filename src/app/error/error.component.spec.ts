@@ -24,7 +24,7 @@ describe('ErrorComponent', () => {
     component = fixture.componentInstance;
     de = fixture.debugElement.query(By.css('h1'));
     el = de.nativeElement;
-    fixture.detectChanges();
+    //fixture.detectChanges();
   });
 
   it('should create', () => {
@@ -33,6 +33,7 @@ describe('ErrorComponent', () => {
 
   it('should contain error text', () => {
     const errorText = component.error;
+    fixture.detectChanges();
     expect(el.textContent).toBe(errorText);
   });
 
