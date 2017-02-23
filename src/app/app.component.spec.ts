@@ -17,7 +17,8 @@ describe('AppComponent', () => {
         HomeComponent,
         HeaderComponent,
         FooterComponent,
-        DashboardComponent
+        DashboardComponent,
+        ErrorComponent
       ],
       imports: [AppRoutes],
     });
