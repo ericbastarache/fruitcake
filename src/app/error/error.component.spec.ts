@@ -9,6 +9,8 @@ import { ErrorComponent } from './error.component';
 describe('ErrorComponent', () => {
   let component: ErrorComponent;
   let fixture: ComponentFixture<ErrorComponent>;
+  let de: DebugElement;
+  let el: HTMLElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -20,10 +22,18 @@ describe('ErrorComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ErrorComponent);
     component = fixture.componentInstance;
+    de = fixture.debugElement.query(By.css('h1'));
+    el = de.nativeElement;
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should contain error text', () => {
+    const errorText = component.error;
+    expect(el.textContent).toBe(errorText);
+  });
+
 });
