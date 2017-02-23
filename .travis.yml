@@ -3,6 +3,7 @@ node_js:
 - 7
 - 6
 before_install:
+  - "export CHROME_BIN=chromium_browser"
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - "mv config.example.json config.json"
