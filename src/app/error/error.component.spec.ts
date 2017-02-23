@@ -30,8 +30,8 @@ describe('ErrorComponent', () => {
 
   it('should contain error text', () => {
     const errorText = component.error;
-    const compiled = fixture.debugElement.nativeElement;
     fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').innerText).toEqual(errorText);
 
   });
