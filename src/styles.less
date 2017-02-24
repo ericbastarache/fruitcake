@@ -32,8 +32,8 @@ body {
 //Loading animation
 div.loading-spinner, div.loading-spinner:before, div.loading-spinner:after {
   background: @white;
-  -webkit-animation: loader 1s infinite ease-in-out;
-  animation: loader 1s infinite ease-in-out;
+  -webkit-animation: loader 5s infinite ease-in-out;
+  animation: loader 5s infinite ease-in-out;
   width: 1em;
   height: 4em;
 }
@@ -96,6 +96,11 @@ div.loading-spinner {
 }
 
 //Site styles
+
+/*
+ *  HEADER COMPONENT
+ *
+ */
 nav.navbar-fruitcake {
   .headerFooterColor();
   border-radius: 0;
@@ -121,11 +126,20 @@ nav.navbar-fruitcake {
   }
 }
 
+/*
+ *  ERROR COMPONENT
+ *
+ */
 section.error {
   img.error-ufo {
     margin: 0 auto;
   }
 }
+
+/*
+ *  FOOTER COMPONENT
+ *
+ */
 
 footer.footer {
   bottom: 0;
